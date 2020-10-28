@@ -4,7 +4,6 @@
 - [Caesar](https://cs50.harvard.edu/x/2020/psets/2/caesar/): Encryption by shifting each characters in each word that is inputted via command line
 - I wrote all the code in each file. No code was provided by the instructor.
 
-Caesar Program Demo
 ![Caesar Program Demo](img/caesardemo.gif)
 
 ## 💡Lessons Learned
