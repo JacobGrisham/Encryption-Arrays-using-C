@@ -14,15 +14,10 @@ char *get_string(const char *prompt);
 int main(int argc, char *argv[])
 {
     // No user input or multiple inputs error handling
-    if (argc != 2)
-    {
-        printf("Usage: ./caesar key\n");
-        return 1;
-    }
     // Text input error handling
-    else if (text(argv[1]) == true)
+    if (argc != 2 || text(argv[1]) == true)
     {
-        printf("Usage: ./caesar key\n");
+        printf("Usage: %s key\n", argv[0]);
         return 1;
     }
     // Finally run program
@@ -44,10 +39,7 @@ int main(int argc, char *argv[])
         cipher(plaintext, ciphertext, k);
 
         // Print ciphertext
-        printf("ciphertext: %s", ciphertext);
-
-        // Print a newline
-        printf("\n");
+        printf("ciphertext: %s\n", ciphertext);
 
         // Program exit
         return 0;
